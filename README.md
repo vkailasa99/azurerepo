@@ -1,4 +1,4 @@
-## Starting the Web App on Local
+## Starting the Web App Locally
 ` $ yarn start `
 
 ## Building the application
