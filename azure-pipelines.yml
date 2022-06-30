@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '6594d39b-c609-48ad-9b25-036947272d12'
   imageRepository: 'basilmyonlinestore'
   containerRegistry: 'devops111.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/Dockerfile-multistage'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'devops1111042daa7-auth'
 
