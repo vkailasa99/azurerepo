@@ -27,3 +27,8 @@ stages:
         repository: 'basilmyonlinestore'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile-multistage'
+    - task: KubernetesManifest@0
+      inputs:
+        action: 'deploy'
+        kubernetesServiceConnection: 'gcp'
+        manifests: '**/manifests/*.yaml'
