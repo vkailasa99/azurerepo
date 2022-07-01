@@ -26,4 +26,4 @@ stages:
         containerRegistry: 'docker-hub-coit'
         repository: 'basilmyonlinestore'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '**/Dockerfile-multistage'
