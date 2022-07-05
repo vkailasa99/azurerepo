@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vkailasaazurerepo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vkailasaazurerepo
+  template:
+    metadata:
+      labels:
+        app: vkailasaazurerepo 
+    spec:
+      containers:
+        - name: vkailasaazurerepo 
+          image: newreg3.azurecr.io/vkailasaazurerepo
+          ports:
+          - containerPort: 80
